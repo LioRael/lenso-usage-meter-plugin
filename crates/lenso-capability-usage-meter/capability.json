@@ -1,0 +1,29 @@
+{
+  "id": "lenso.usage-meter@1",
+  "version": "1.0.0",
+  "portable": true,
+  "cross_lane_transfer": true,
+  "operations": [
+    {
+      "name": "record_usage",
+      "interaction": "request",
+      "request_schema": "schemas/record-usage-request.schema.json",
+      "response_schema": "schemas/record-usage-response.schema.json",
+      "domain_error_schema": "schemas/record-usage-error.schema.json"
+    },
+    {
+      "name": "correct_usage",
+      "interaction": "request",
+      "request_schema": "schemas/correct-usage-request.schema.json",
+      "response_schema": "schemas/correct-usage-response.schema.json",
+      "domain_error_schema": "schemas/correct-usage-error.schema.json"
+    },
+    {
+      "name": "read_usage_window",
+      "interaction": "request",
+      "request_schema": "schemas/read-usage-window-request.schema.json",
+      "response_schema": "schemas/read-usage-window-response.schema.json",
+      "domain_error_schema": "schemas/read-usage-window-error.schema.json"
+    }
+  ]
+}

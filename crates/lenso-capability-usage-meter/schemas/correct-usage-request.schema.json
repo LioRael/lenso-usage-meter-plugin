@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["correction_id", "original_event_id", "quantity_delta", "reason"],
+  "properties": {
+    "correction_id": {
+      "type": "string"
+    },
+    "original_event_id": {
+      "type": "string"
+    },
+    "quantity_delta": {
+      "type": "string",
+      "description": "Non-zero signed base-10 int64 encoded as a portable string."
+    },
+    "reason": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "title": "CorrectUsageRequest"
+}

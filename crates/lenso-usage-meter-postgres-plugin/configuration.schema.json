@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema",
+    "database_url_secret",
+    "reader_callers",
+    "producer_callers",
+    "admin_callers"
+  ],
+  "properties": {
+    "schema": { "type": "string" },
+    "database_url_secret": { "type": "string" },
+    "reader_callers": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "producer_callers": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "admin_callers": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}

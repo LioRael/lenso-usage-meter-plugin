@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["quantity", "event_count", "aggregate_revision"],
+  "properties": {
+    "quantity": {
+      "type": "string",
+      "description": "Signed arbitrary-precision base-10 integer encoded as a portable string.\n\nEach individual event and correction is int64, but their exact sum may\nexceed int64."
+    },
+    "event_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "aggregate_revision": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "additionalProperties": false,
+  "title": "ReadUsageWindowResponse"
+}
