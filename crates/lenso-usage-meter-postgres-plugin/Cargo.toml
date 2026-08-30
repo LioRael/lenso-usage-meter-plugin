@@ -5,6 +5,7 @@ edition.workspace = true
 license.workspace = true
 publish = false
 repository.workspace = true
+rust-version.workspace = true
 description = "PostgreSQL-backed idempotent Usage Meter Plugin for Lenso vNext."
 
 [package.metadata.lenso]
