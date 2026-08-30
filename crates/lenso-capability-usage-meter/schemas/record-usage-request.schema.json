@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "event_id",
+    "scope_kind",
+    "scope_id",
+    "subject",
+    "meter",
+    "quantity",
+    "occurred_at"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string"
+    },
+    "scope_kind": {
+      "type": "string"
+    },
+    "scope_id": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "meter": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "string",
+      "description": "Positive base-10 int64 encoded as a portable string."
+    },
+    "occurred_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "RFC 3339 timestamp that resolves to a whole microsecond."
+    }
+  },
+  "additionalProperties": false,
+  "title": "RecordUsageRequest"
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "scope_kind",
+    "scope_id",
+    "subject",
+    "meter",
+    "window_start",
+    "window_end"
+  ],
+  "properties": {
+    "scope_kind": {
+      "type": "string"
+    },
+    "scope_id": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "meter": {
+      "type": "string"
+    },
+    "window_start": {
+      "type": "string",
+      "format": "date-time",
+      "description": "RFC 3339 timestamp that resolves to a whole microsecond."
+    },
+    "window_end": {
+      "type": "string",
+      "format": "date-time",
+      "description": "RFC 3339 timestamp that resolves to a whole microsecond."
+    }
+  },
+  "additionalProperties": false,
+  "title": "ReadUsageWindowRequest"
+}
