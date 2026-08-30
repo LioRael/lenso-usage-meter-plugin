@@ -17,3 +17,14 @@ does not silently overflow when many individually valid entries are summed.
 
 The Plugin does not read or mutate Entitlements. Billing and business Plugins
 choose when to record usage and how to interpret the returned aggregate fact.
+
+## Distribution boundary
+
+`lenso-capability-usage-meter` is the public, runtime-independent collaboration
+contract. `lenso-usage-meter-postgres-plugin` remains a repository-local linked
+implementation: it is tested here but is not published to crates.io. This keeps
+consumers on the Capability instead of coupling them to the Plugin's private
+PostgreSQL schema or implementation types.
+
+See [the release process](docs/release-process.md) for the review, package, and
+Trusted Publishing gates.
