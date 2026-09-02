@@ -15,7 +15,7 @@ root-slot = "usage-meter"
 [dependencies]
 lenso.workspace = true
 lenso-capability-secrets.workspace = true
-lenso-capability-usage-meter = { path = "../lenso-capability-usage-meter", version = "0.1.0" }
+lenso-capability-usage-meter = { path = "../lenso-capability-usage-meter", version = "0.1.1" }
 lenso-kernel.workspace = true
 lenso-postgres-kit.workspace = true
 serde.workspace = true
